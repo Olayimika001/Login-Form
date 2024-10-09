@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background: url(image.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 800px;
+    height: 450px;
+    margin: 50px auto;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+.first{
+
+}
+.signIn{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: rgb(79, 68, 68);
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    transition: .5s;
+}
+.tosignup{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    transition: .5s ease-in-out;
+}
+.signup{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: rgb(79, 68, 68);
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+    display: none;
+}
+.signup.show{
+    transform: translateX(100%);
+}
+.tosignin.show{
+    transform: translateX(-100%);
+}
+.tosignin{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    display: none;
+}
+h1{
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+i{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or{
+    text-align: center;
+}
+p{
+    text-align: center;
+    line-height: 20px;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 300px;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+:placeholder-shown{
+    text-align: center;
+}
+button{
+    width: 150px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ==================================== */
+/* ==================================== */
+/* ====================================*/
+
+.container-Sign-up,
+.container-login{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    max-width: 800px;
+    width: 80%;
+    height: 450px;
+    margin: 50px auto;
+    background-color: transparent;
+    box-shadow: 10px 10px 14px rgba(0,0,0,0.35);
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+
+.login-form{
+    height: 100%;
+    width: 50%;
+    /* background-color: #ff289b4a; */
+    background: transparent;
+    backdrop-filter: blur(30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-container i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.icon-container i.fa-facebook-f{
+    background: #0866ff;
+    transition: all .3s ease;
+
+}
+
+.icon-container i.fa-facebook-f:hover{
+    filter: drop-shadow(0 0 10px #0866ff);
+    transform: scale(1.175);
+}
+
+.icon-container i.fa-google{
+    background: #d73f25;
+    transition: all .3s ease;
+
+}
+
+.icon-container i.fa-google:hover{
+    filter: drop-shadow(0 0 10px #d73f25);
+    transform: scale(1.175);
+}
+
+
+.icon-container i.fa-tiktok{        
+    background: #020202;
+    transition: all .3s ease;
+}
+
+.icon-container i.fa-tiktok:hover{
+    filter: drop-shadow(0 0 10px #020202);
+    transform: scale(1.175);
+
+}
+
+.login-title{
+    color: #fff;
+    text-align: center;
+}
+
+.form-container input{
+    color: #fff;
+}
+
+input:focus-visible {
+    outline-offset: 0px !important;
+}
+
+:focus-visible {
+    outline: none !important;
+}
+
+.sign-up-content,
+.login-content{
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.sign-up-content .des,
+.login-content .des{
+    font-size: 11px;
+}
+
+#loginBtn,
+#signUpBtn{
+    margin-top: 50px;
+}
+
+#fullname{
+    text-transform: capitalize;
+}
+
+.hidden{
+    display: none;
+}
+
+.bg-layout{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    background: #373432c8;
+    backdrop-filter: blur(30%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    transition: all .5s ease;
+}
+
+.bg-layout.move{
+    transform: translateX(100%);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App | Login</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e32bcc94dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-login " >
+        <div class="bg-layout" id="bgLayout"></div>
+        <!-- login form-->
+        <div class="login-form "id="loginForm">
+            <h3 class="login-title">Login </h1>
+            <div class="icon-container">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="or">or use your account </p>
+            <div class="form-container">
+                <form  >
+                    <input id="loginEmail" type="email" required placeholder="your email">
+                    <br>
+                    <input id="loginpassword" type="password" required placeholder="your password"">
+
+                    <a href="#">
+                        <button type="submit" id="submitBtn">Login</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+        <!-- sign up content-->
+        <div class="sign-up-content hidden" id="signUpContent">
+            <h2 class="login-heading">
+                Welcome Back
+            </h2>
+
+            <p class="des">
+                To keep connected with us please login with your personal info.
+            </p>
+
+            <a href="#">
+                <button id="loginBtn">Login</button>
+            </a>
+        </div>
+        <!-- login content -->
+        <div class="login-content " id="loginContent">
+            <h2 class="login-heading">
+                Hello, Friend
+            </h2>
+
+            <p class="des">
+                Enter your personal details and start journey with us.
+            </p>
+
+            <a href="#">
+                <button id="signUpBtn">Sign Up</button>
+            </a>
+        </div>
+        <!-- sign up form -->
+        <div class="sign-up-form hidden" id="signUpForm">
+            <h3 class="login-title">Sign Up</h1>
+            <div class="icon-container">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="or">or use your email for registration </p>
+            <div class="form-container">
+                <form  >
+                    <input id="fullname" type="text" required placeholder="your full name">
+                    <br>
+                    <input id="email" type="email" required placeholder="your email">
+                    <br>
+                    <input id="password" type="password" required placeholder="your password">
+                    <a href="#">
+                        <button type="submit" id="submitBtn">Sign Up</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-Sign-up hidden">
+        <div class="sign-up-content">
+            <h2 class="login-heading">
+                Welcome Back
+            </h2>
+
+            <p class="des">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat inventore qui asperiores est ipsa.
+            </p>
+
+            <a href="#">
+                <button id="loginBtn">Sign Up</button>
+            </a>
+        </div>
+
+        <div class="sign-up-form">
+            <h3 class="login-title">Sign Up</h1>
+            <div class="icon-container">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <p class="or">or use your email for registration </p>
+            <div class="form-container">
+                <form  >
+                    <input id="fullname" type="text" required placeholder="your full name">
+                    <br>
+                    <input id="email" type="email" required placeholder="your email">
+                    <br>
+                    <input id="password" type="password" required >
+                    <a href="#">
+                        <button type="submit" id="submitBtn">Sign Up</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
